@@ -1,0 +1,59 @@
+.danh_sach_ghe {
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .screen {
+    height: 15px;
+    width: 100%;
+    background-color: #ffb100;
+    margin-bottom: 20px;
+  }
+  .info {
+    color: #fff;
+    table {
+      margin: auto;
+    }
+    .note {
+      margin-top: 30px !important;
+      /* padding-left: 30px; */
+      /* padding-right: 30px; */
+      width: 35%;
+      margin: auto;
+      .color {
+        width: 45px;
+        height: 25px;
+        border-radius: 8px;
+      }
+      .screen_color {
+        .color {
+          background-color: ffb10094 !important;
+        }
+      }
+      .item_color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p{
+        width: 100px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .price {
+      width: 30%;
+      background: white;
+      color: black;
+      margin-top: 30px;
+      th {
+        border: 1px solid;
+      }
+      td{
+        border: 1px solid;
+      }
+    }
+  }
+}

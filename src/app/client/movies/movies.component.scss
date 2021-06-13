@@ -1,0 +1,36 @@
+.card_movie {
+  padding-top: 50px;
+  .pagination::ng-deep {
+    justify-content: center;
+    margin-top: 20px;
+    .ngx-pagination {
+      padding: 0px !important;
+    }
+  }
+  .row {
+    justify-content: center;
+  }
+  a.disabled {
+    pointer-events: all;
+    cursor: default;
+  }
+  nav {
+
+    li.active {
+        background-color: aqua;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .disabled {
+      &:hover {
+        background-color: white!important;
+      }
+    }
+    .page-link {
+        &:focus{
+            box-shadow: none;
+        }
+    }
+  }
+}

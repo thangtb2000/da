@@ -1,0 +1,36 @@
+.movie{
+    
+    .banner{
+        .banner_img{
+            position: relative;
+            width: 100%;
+            img{
+                filter: blur(8px);
+                height: 570px;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        width: 100%;
+        .c13{
+            margin-right: 10px;
+            width: 35px;
+            border-radius: 3px;
+            background-color: #fb4226;
+            text-align: center;
+        }
+       .tenPhim{
+           font-size: 28px; 
+           font-weight: 500;           
+       }
+    }
+    .detail_movie{
+        height: 300px;
+        border-radius: 10px;
+    }
+}

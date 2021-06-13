@@ -1,0 +1,49 @@
+.navbar {
+  @font-face {
+    font-family: azonix;
+    src: url('../../../assets/images/Azonix.otf') format("opentype");
+  }
+  @font-face {
+    font-family: stanley;
+    src: url(../../../assets/images/Stanley.otf) format("opentype");
+  }
+  
+  #navbarNav {
+    justify-content: center;
+  }
+  .logout {
+    cursor: pointer;
+  }
+  .nav_user{
+    display: flex;
+    justify-content: flex-end;
+    .dropdown-menu{
+      right: 10%;
+      left: 45%
+    }
+  }
+  .btn{
+    background-color: #e76464;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  .navbar-brand{
+    &:focus{
+      outline: none;
+    }
+  }
+}
+.navbar-expand-lg {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  .text {
+    font-family: azonix;
+    text-transform: uppercase;
+    color: rgb(48, 128, 128);
+    font-style: italic;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}

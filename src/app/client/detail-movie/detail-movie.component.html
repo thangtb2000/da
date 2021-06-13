@@ -1,0 +1,60 @@
+<div class="movie text-white" *ngIf="isloading">
+    <div class="banner ">
+        <div class="banner_img"><img class="imgbg" src="{{detailMovie?.hinhAnh}}"></div>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-6 d-flex">
+                <img class="detail_movie" [src]="detailMovie?.hinhAnh" >
+                <div class="text ml-4 mt-5">
+                    <p>{{detailMovie?.ngayKhoiChieu}}</p>
+                    <div class="d-flex">
+                        <span class="c13">C13</span>
+                        <span class="tenPhim">{{detailMovie?.tenPhim}}</span>
+                    </div>
+                    <p>120 phút - 0 IMDb - 2D/Digital</p>
+                    <button class="btn btn-danger">Mua Ve</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Danh Gia</h2>
+            </div>
+        </div>
+    </div>  
+        <!-- <div class="video">
+            <iframe id="iframe" frameborder="0" allowfullscreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title="YouTube video player" width="640" height="360" [src]="url | safe"></iframe>
+        </div> -->
+
+        <!-- <div id="player"></div> -->
+    
+
+    <!-- <iframe id="player" frameborder="0" allowfullscreen="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="YouTube video player" width="640" height="360" [src]="YTUrl | safe"></iframe> -->
+<!-- 
+    <div class="contentbot container my-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class=" mr-2" (click)="chooseAction('LichChieu')">LichChieu</a>
+                <a class=" mr-2" (click)="chooseAction('ThongTin')">ThongTin</a>
+                <a class=" mr-2" (click)="chooseAction('DanhGia')">DanhGia</a>
+            </div>
+        </div>
+        <div class="row" [ngSwitch]="loaiAction">
+            <div class="col-12" *ngSwitchCase="'LichChieu'">
+                LichChieu
+            </div>
+            <div class="col-12" *ngSwitchCase="'ThongTin'">
+                ThongTin
+            </div>
+            <div class="col-12" *ngSwitchCase="'DanhGia'">
+                DanhGia
+                
+                    <p>{{detailMovie?.moTa}}</p> 
+            </div>
+        </div>
+    </div> -->
+
+</div>
